@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: "Courier New", Courier, monospace;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  image-rendering: pixelated;
+  background-color: #008080;
+  color: #000000;
+}
+
+@utility border-outset {
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+@utility border-inset {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Custom retro styling scrollbars and selections */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+  box-shadow: inset 1px 1px 0 #0a0a0a, inset -1px -1px 0 #dfdfdf;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  box-shadow: inset 1.5px 1.5px 0 #fff, inset -1.5px -1.5px 0 #808080, inset 3px 3px 0 #dfdfdf, inset -3px -3px 0 #0a0a0a;
+}
+::-webkit-scrollbar-button {
+  display: block;
+  background: #c0c0c0;
+  width: 16px;
+  height: 16px;
+}
+
+

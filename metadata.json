@@ -1,0 +1,6 @@
+{
+  "name": "Task Buddy 95",
+  "description": "A retro-themed (Windows 95 / Tempel OS) productivity web app combining authentication, task management, inline Gemini API learning assistance, and a persistent notepad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
