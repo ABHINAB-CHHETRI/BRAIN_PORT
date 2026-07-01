@@ -72,7 +72,7 @@ const ai = new GoogleGenAI({
   }
 });
 
-let activeModel = 'gemini-3.5-flash';
+let activeModel = 'gemini-1.5-flash';
 
 async function initGemini() {
   try {
@@ -96,7 +96,7 @@ async function initGemini() {
         return isNotSpecial && matchesType;
       });
       if (candidates.length > 0) {
-        const rawName = candidates[0].name || 'gemini-3.5-flash';
+        const rawName = candidates[0].name || 'gemini-1.5-flash';
         activeModel = rawName.startsWith('models/') ? rawName.substring(7) : rawName;
         console.log(`Selected Gemini model: ${activeModel}`);
       }
